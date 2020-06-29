@@ -1,0 +1,353 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html
+{
+    height: 100%;
+    /* background: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    background-color: #444;
+}
+body
+{
+    height: 100%;
+    background-image: url(../assets/plateia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header
+{
+    width: 100%;
+    padding: 10px 2%;
+    /* background-color: #1e4270a4; */
+    background-image: linear-gradient(to top, hsla(214, 58%, 28%, 0.4) 0%, hsla(206, 28%, 45%, 0.1) 100%);
+
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+    position: relative;
+}
+header h1
+{
+    font-weight: normal;
+    font-size: 34px;
+}
+header h3
+{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+header .logo
+{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 120px;
+    height: 50px;
+
+    background-color: rgba(210, 113, 255, 0.472);
+}
+header .logo p
+{
+    line-height: 50px;
+    text-align: center;
+}
+
+section.content
+{
+    width: 100%;
+    padding: 30px 2%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.content .descricao
+{
+    width: 60%;
+    /* background-color: #1e4270a4; */
+    background-image: linear-gradient(to top, #1e4270a4 0%, #53789598 100%);
+    background-image: linear-gradient(to top, hsla(214, 58%, 28%, 0.6) 0%, hsla(206, 28%, 45%, 0.3) 100%);
+
+    padding: 20px;
+    border-radius: 15px;
+}
+section.content .descricao video
+{
+    width: 100%;
+}
+section.content .descricao ul
+{
+    list-style-type: none;
+}
+section.content .descricao ul li
+{
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+    margin: 15px 0;
+}
+section.content .descricao ul li i
+{
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+
+
+section.content .conversao
+{
+    width: 30%;
+    border-radius: 15px;
+    
+    background-image: linear-gradient(to top, #1e4270a4 0%, #53789598 100%);
+
+    padding: 20px 10px;
+}
+
+section.content .conversao form {
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.content .conversao form .form-wraper {
+    width: 100%;
+    margin: 20px 0;
+
+    position: relative;
+}
+
+section.content .conversao form .form-wraper i
+{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: white;
+}
+
+section.content .conversao form label {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+
+    font-family: 'Roboto', sans-serif;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    transition: .5s;
+    pointer-events: none;
+}
+
+section.content .conversao form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #fff;
+
+    font-size: 16px;
+    color: #fff;
+
+    background-color: transparent;
+    outline: none;
+
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.content .conversao form input:focus ~ label, section.content .conversao form textarea:focus ~ label,
+section.content .conversao form input:valid ~ label, section.content .conversao form textarea:valid ~ label
+{
+    color: #ff8c49;
+    font-size: 12px;
+    left: 0;
+    top: -16px;
+}
+
+section.content .conversao form button {
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+
+    position: relative;
+
+    /* background-color: #03a9f4;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%); */
+    background: #ff8c49;
+
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.content .conversao form button:hover
+{
+    background: #eb7b3b;
+}
+
+/* DEPOIMENTOS  */
+
+
+section.depoimentos-container
+{
+    width: 100%;
+}
+
+section.depoimentos-container .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-depoimentos
+{
+    width: 50%;
+    height: 60px;
+    border-radius: 10px 0;
+
+    transform: skewX(-20deg);
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
+
+    background-image: linear-gradient(to top, hsla(214, 58%, 28%, 0.4) 0%, hsla(206, 28%, 45%, 0.1) 100%);
+    position: relative;
+}
+#title-depoimentos > h1
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+
+.depoimentos
+{
+    width: 100%;
+    margin: 40px 0;
+}
+
+
+.depoimento-single
+{
+    width: 100%;
+    max-width: 700px;
+
+    background-image: linear-gradient(to top, hsla(214, 58%, 28%, 0.4) 0%, hsla(206, 28%, 45%, 0.1) 100%);
+
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 15px 0;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+.depoimento-single:hover
+{
+    transform: translateX(-50%) scale(1.1);
+}
+
+.perfil-depoimento
+{
+    width: 20%;
+}
+.depoimento-single img
+{
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.depoimento-single h3
+{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.depoimento-single p
+{
+    width: 80%;
+    color: #fff;
+    margin-left: 25px;
+}
+
+
+@media screen and (max-width:1040px)
+{
+    header .logo{
+        position: relative;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
+    section.content
+    {
+        justify-content: center;
+    }
+
+    section.content .descricao, section.content .conversao
+    {
+        width: 70%;
+        margin: 20px 0;
+    }
+    
+}
+@media screen and (max-width:780px)
+{
+
+    section.content .descricao, section.content .conversao
+    {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+}
