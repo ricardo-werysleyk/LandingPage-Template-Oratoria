@@ -240,6 +240,7 @@ section.depoimentos-container .container
 #title-depoimentos
 {
     width: 50%;
+    min-width: 240px;
     height: 60px;
     border-radius: 10px 0;
 
